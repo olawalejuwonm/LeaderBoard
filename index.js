@@ -1,6 +1,8 @@
-const baseUrl = 'http://localhost:3000/'
+//const baseUrl = 'http://localhost:3000/'
+const baseUrl = 'https://raw.githubusercontent.com/olawalejuwonm/LeaderBoard/master/leaders.json'
 
-fetch(baseUrl + 'leaders')
+
+fetch(baseUrl + 'leaders.json')
 .then((leaders) => {
    return leaders.json()
 },(err) => console.log(err))
